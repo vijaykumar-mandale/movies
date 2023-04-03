@@ -9,7 +9,6 @@ import Footer from "./components/footer/Footer";
 import Home from "./pages/home/home";
 import Details from "./pages/details/Details";
 import SearchResult from "./pages/searchResult/searchResult";
-import Explore from "./pages/explore/Explore";
 import PageNotFound from "./pages/404/pageNotFound";
 
 function App() {
@@ -60,7 +59,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/:mediaType/:id" element={<Details />} />
         <Route path="/search/:query" element={<SearchResult />} />
-        <Route path="/explore/:mediaType" element={<Explore />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
